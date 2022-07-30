@@ -138,8 +138,9 @@ body {
 .button
 {
   border: none;
+  width: 100%;
   color: white;
-  padding: 16px 32px;
+  padding: 19px 67px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -148,8 +149,9 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 0.2em;
-  margin-left: 39%;
+  align-self: center;
   margin-top: 2%;
+  font-weight: bold;
 }
 
 .button1 {
@@ -161,4 +163,28 @@ body {
 .button1:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+#loader {
+  border : 2px solid #ffffff;
+  border-radius : 50%;
+  border-top : 10px #ae0d0d;
+  width : 70px;
+  height : 72px;
+  animation : spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform : rotate(360deg);
+  }
+}
+
+.center {
+  position : absolute;
+  top : 0%;
+  bottom : 0%;
+  left : 0%;
+  right : 0%;
+  margin : auto;
 }
